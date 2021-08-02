@@ -11,30 +11,10 @@ deboever.doctolib@gmail.com
 username : deboever.doctolib
 
 
-Create a main.tf script to spin up an AWS E2C instance. 
+Q1 : 
 
-run terraform init before running terraform plan
+Create a main.tf script to spin up an AWS E2C instance.
 
--- Old contents of variables.tf
+After doing a terraform apply, we see that the instance is sucessfully created : 
 
-variable "access_key" {
-    access_key = "AKIA4K4QQ4ORI6WBVRYZ"
-    type = string
-    description = "AWS public access key for this project"
-}
 
-variable "secret_key" {
-    secret_key = "UCruVdnmrPCEf6igWtlfbIcS+gCspNLMfmkVLjXx"
-    type = string
-    description = "AWS private key for this project"
-}
-
-variable "key_name" {
-  description = " SSH keys to connect to ec2 instance"
-  default     =  "private_key_doctolib.pem"
-}
-
-variable "instance_type" {
-  description = "instance type for ec2"
-  default     =  "t2.micro"
-}
