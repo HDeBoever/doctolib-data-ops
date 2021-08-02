@@ -17,4 +17,7 @@ Create a main.tf script to spin up an AWS E2C instance.
 
 After doing a terraform apply, we see that the instance is sucessfully created : 
 
+![image](https://user-images.githubusercontent.com/16905166/127865952-342a8abe-ce03-477d-85da-e2e63552e380.png)
+
+
 
