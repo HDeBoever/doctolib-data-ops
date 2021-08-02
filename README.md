@@ -1,12 +1,12 @@
 Google account to be used for this task : 
 
 deboever.doctolib@gmail.com
-&;Z$XHj9+w!%`7hT
+###
 
 Amazon account created with alternate google account details : 
 
 deboever.doctolib@gmail.com
-nJhc-G"m^-&cV7-
+###
 
 username : deboever.doctolib
 
