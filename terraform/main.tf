@@ -24,5 +24,8 @@ resource "aws_instance" "e2c_doctolib" {
         }
 }
 
-# Followed the instructions from here : 
-# https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started
+# Answer for Q2 
+#
+# I would connect to the E2C instance using SSH and a private .pem key file. 
+# This would allow me to authenticate myself using the credentials recognized by AWS for my instance. 
+# Doing this will give my key confirmed identity access as a known host to the E2C instance.  
