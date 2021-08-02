@@ -15,17 +15,18 @@ provider "aws" {
   region  = "eu-west-3"
 }
 
-# Configure the E2C instance details
-resource "aws_instance" "e2c_doctolib" {
+# Configure the EC2 instance details
+resource "aws_instance" "ec2_doctolib" {
     ami = "ami-0f7cd40eac2214b37"
     instance_type = "t2.micro"
         tags = {
-            Name = "doctolib-e2c"
+            Name = "doctolib-ec2"
         }
 }
 
 # Answer for Q2 
 #
-# I would connect to the E2C instance using SSH and a private .pem key file. 
+# I would connect to the EC2 instance using SSH and a private .pem key file. 
 # This would allow me to authenticate myself using the credentials recognized by AWS for my instance. 
-# Doing this will give my key confirmed identity access as a known host to the E2C instance.  
+# Doing this will give my key confirmed identity access as a known host to the EC2 instance.  
+# Edit the inbound rules to allow connections via SSH on port 22
