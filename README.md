@@ -11,7 +11,7 @@ deboever.doctolib@gmail.com
 username : deboever.doctolib
 
 
-Q1 : 
+# Q1 : 
 
 Create a main.tf script to spin up an AWS E2C instance.
 
@@ -22,7 +22,7 @@ After doing a terraform apply, we see that the instance is sucessfully created :
 I followed the instructions from the Hashicorp documentation : 
 https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started
 
-Q2 :
+# Q2 :
 
 - I would connect to the EC2 instance using SSH and a private .pem key file. 
 - This would allow me to authenticate myself using the credentials recognized by AWS for my instance. 
@@ -32,9 +32,19 @@ Q2 :
 
 Answer can be seen in main.tf
 
-Q3 :
+# Q3 :
 
 To create a private S3 bucket in AWS, we can use a terraform directive. My solution can be seen in main.tf, variables.tf, and outputs.tf.
+
+![image](https://user-images.githubusercontent.com/16905166/128367069-4db12361-1058-4d3c-afb5-1dfadeb4296f.png)
+![image](https://user-images.githubusercontent.com/16905166/128367241-4e1c2c67-d505-4965-b261-bfa5ae4f3d5e.png)
+
+
+This is the result of the new terraform apply command which creates an S3 bucket with the "can_be_written" folder in it. 
+
+# Q4 : 
+
+Configure the instance to include docker and docker-compose TODO
 
 
 
