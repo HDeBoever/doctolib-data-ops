@@ -34,7 +34,7 @@ Answer can be seen in main.tf
 
 Q3 :
 
-To create a private S3 bucket in AWS, we can use a terraform directive. My solution can be seen in main.tf
+To create a private S3 bucket in AWS, we can use a terraform directive. My solution can be seen in main.tf, variables.tf, and outputs.tf.
 
 
 
