@@ -13,7 +13,7 @@ variable "tags" {
     type        = map
     description = "(Optional) A mapping of tags to assign to the bucket."
     default     = {
-        environment = "DEV"
+        environment = "doctolib-testing"
         terraform   = "true"
     }
 }
