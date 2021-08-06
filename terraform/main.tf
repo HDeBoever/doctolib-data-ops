@@ -80,21 +80,3 @@ resource "aws_s3_bucket_public_access_block" "block_public_acl" {
   block_public_acls   = true
   block_public_policy = true
 }
-
-
-# Q4 : Install docker and docker-compose on the EC2 instance on start-up of the machine 
-provider "docker" {}
-
-resource "docker_image" "nginx" {
-  name         = "nginx:latest"
-  keep_locally = false
-}
-
-resource "docker_container" "nginx" {
-  image = docker_image.nginx.latest
-  name  = "doctolib-q4"
-  ports {
-    internal = 80
-    external = 8000
-  }
-}
