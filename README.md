@@ -46,5 +46,12 @@ This is the result of the new terraform apply command which creates an S3 bucket
 
 Configure the instance to include docker and docker-compose TODO
 
+# Q5 and Q6
+
+![image](https://user-images.githubusercontent.com/16905166/128499017-14d87686-85eb-445a-9ea0-b1446a17bccb.png)
+
+Here are the outputs on my server of the docker images and the docker file being hosted and used on the ec2 instance. 
+I hope I followed the specifications, but I would love to talk about this and recieve more guidance during our next interview. 
+
 
 
