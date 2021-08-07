@@ -44,12 +44,12 @@ resource "tls_private_key" "pk" {
 
 # Create "doctolib-public-key" to AWS
 resource "aws_key_pair" "kp-doctolib" {
-  key_name   = "doctolib-public-key"      
+  key_name   = "doctolib-test-public-key"      
   public_key = tls_private_key.pk.public_key_openssh
 
   # Create "doctolib-private-key.pem" to your local machine
   provisioner "local-exec" { 
-    command = "echo '${tls_private_key.pk.private_key_pem}' > ./doctolib-private-key.pem"
+    command = "echo '${tls_private_key.pk.private_key_pem}' > ./doctolib-test-private-key.pem"
   }
 }
 
