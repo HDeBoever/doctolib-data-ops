@@ -53,5 +53,6 @@ Configure the instance to include docker and docker-compose TODO
 Here are the outputs on my server of the docker images and the docker file being hosted and used on the ec2 instance. 
 I hope I followed the specifications, but I would love to talk about this and recieve more guidance during our next interview. 
 
+I was able to link the public IPV4 address of the Docker container to the address of the ECS instance on the address 15.237.24.222
 
 
